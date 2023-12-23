@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<game name="Default Game"
-    id="SAMPLEID-GUID-0000-0000-00000000GAME"
-    version="1.0.0.0" 
-    tags="game"
-    description="A base game plugin ready to be customized"
-    setsurl="http://www.octgn.net" 
-	gameurl="http://www.octgn.net"
-    authors="brine"
+<game name="Tarocc"
+    id="9df0e641-114c-4b90-8d34-f78b6eda3bcc"
+    version="0.0.0.1" 
+    tags="test"
+    description="intern demo for the new game tarocc"
+    setsurl="de4d90cf-c287-4a80-b1c2-c35060e772d6" 
+	gameurl=""
+    authors="PROPRIO IO"
     iconurl="https://raw.github.com/kellyelton/Standard-Playing-Cards-Octgn/master/src/images/icon.jpg"
     octgnVersion="3.1.240.0"
     scriptVersion="3.1.0.2"
@@ -26,17 +26,18 @@
     <documents>
     </documents>
     <gameModes>
+        
     </gameModes>
     <globalvariables>
     </globalvariables>
-    <card back="Resources/back.png" front="Resources/front.png" width="63" height="88" cornerRadius="2" >
+    <card back="Resources/back.png" front="Resources/myfront.png" width="63" height="88" cornerRadius="2" >
         <property name="Text" type="String" textKind="Free" hidden="False" ignoreText="False" />
     </card>
     <table name="Table" visibility="undefined" ordered="False" width="800" height="650" background="Resources/wood.jpg" backgroundStyle="uniformToFill">
         <groupaction menu="Flip a Coin" shortcut="ctrl+shift+r" execute="flipCoin" />
         <groupaction menu="Roll a 6-sided Die" shortcut="ctrl+r" execute="rollDice" />
         <groupaction menu="Interrupt Game" shortcut="enter" execute="interrupt" />
-        <groupaction menu="Pass" shortcut="tab" execute="passTurn" />
+    <!--    <groupaction menu="Pass" shortcut="tab" execute="passTurn" />-->
         <cardaction menu="Rotate Card" default="True" batchExecute="rotate" />
         <cardaction menu="Flip Card Face Up/Down" shortcut="ctrl+f" batchExecute="flip" />
         <cardaction menu="Add/Remove Highlight" shortcut="ctrl+A" batchExecute="highlightCard" />
@@ -67,5 +68,12 @@
   </shared>
   <deck>
       <section name="Main Deck" group="Deck" />
+      <section name="The void" group= "thevoid" /> 
   </deck>
+    <phases>
+    <phase name="Draw Step" icon="icon/mypic.jpg" />
+    <phase name="Action Phase" icon="icon/mypic2.jpg" />
+    <phase name="Resolve Phase" icon="icon/mypic2.jpg" />
+    
+  </phases> 
 </game>

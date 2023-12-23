@@ -13,7 +13,9 @@ discard = "Discard"
 highlight = "#ff0000"
 
 # Change this positive integer value to customize the default Draw Many count
-drawManyDefault = 5
+drawManyDefault = 2
+const_drawInitialHand = 5
+
 
 # Change this tuple if you want to create a specific default marker (not recommended)
 StandardMarker = ("Marker", "d9851c6f-2ed7-4ca9-82d2-f22e4e12114c")
@@ -45,6 +47,11 @@ def drawMany(group, x = 0, y = 0):
     for card in group.top(count):
         card.moveTo(card.owner.hand)
     notify("{} draws {} cards from {}.".format(me, count, group.name))
+
+
+def drawInitialHand(group):
+    drawMany(const_drawInitialHand)
+    notify("pesco carte iniziale")
 
 def discardMany(group, x = 0, y = 0):
     if len(group) < 1:
