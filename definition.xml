@@ -4,7 +4,7 @@
     version="0.0.0.1" 
     tags="test"
     description="intern demo for the new game tarocc"
-    setsurl="de4d90cf-c287-4a80-b1c2-c35060e772d6" 
+    setsurl="017e0bce-4807-4cf3-b122-2d163ff3b825" 
 	gameurl="https://alessiodemarino.github.io/campionididestini/"
     authors="PROPRIO IO"
     iconurl="https://raw.github.com/kellyelton/Standard-Playing-Cards-Octgn/master/src/images/icon.jpg"
@@ -37,7 +37,7 @@
             <property name="cos" type="String"  />
             <property name="uprightEffect" type="RichText"  />
             <property name="reversedEffect" type="RichText"  />
-
+            <property name= "minionSuits"  type="String"/>
 
 
 
