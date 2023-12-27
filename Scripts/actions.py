@@ -8,6 +8,7 @@ import re
 
 deck = "Deck"
 discard = "Discard"
+graveyard = "thevoid"
 
 ## Change this HEX string value to customize the highlight color
 highlight = "#ff0000"

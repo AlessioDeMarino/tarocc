@@ -5,7 +5,7 @@
     tags="test"
     description="intern demo for the new game tarocc"
     setsurl="de4d90cf-c287-4a80-b1c2-c35060e772d6" 
-	gameurl=""
+	gameurl="https://alessiodemarino.github.io/campionididestini/"
     authors="PROPRIO IO"
     iconurl="https://raw.github.com/kellyelton/Standard-Playing-Cards-Octgn/master/src/images/icon.jpg"
     octgnVersion="3.1.240.0"
@@ -32,6 +32,15 @@
     </globalvariables>
     <card back="Resources/back.png" front="Resources/myfront.png" width="63" height="88" cornerRadius="2" >
         <property name="Text" type="String" textKind="Free" hidden="False" ignoreText="False" />
+            <property name="readings" type="RichText"  />
+            <property name="power" type="String"  />
+            <property name="cos" type="String"  />
+            <property name="uprightEffect" type="RichText"  />
+            <property name="reversedEffect" type="RichText"  />
+
+
+
+
     </card>
     <table name="Table" visibility="undefined" ordered="False" width="800" height="650" background="Resources/wood.jpg" backgroundStyle="uniformToFill">
         <groupaction menu="Flip a Coin" shortcut="ctrl+shift+r" execute="flipCoin" />
@@ -63,6 +72,9 @@
        <groupaction menu="Shuffle" shortcut="ctrl+S" execute="shuffle" />
        <groupaction menu="Move All Cards to Deck" execute="allToDeck" />
     </group>
+    <group name="thevoid" shortcut="" visibility="all" icon="Resources/discard.png">
+      <groupaction menu="Shuffle" shortcut="ctrl+S" execute="shuffle" />
+      </group>
   </player>
   <shared>
   </shared>
