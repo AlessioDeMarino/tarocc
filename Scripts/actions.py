@@ -1,4 +1,9 @@
 import re
+import octgn_api
+# noinspection PyUnreachableCode
+# A trick which allows us to have IDE support, while not actually importing stuff.
+if False:
+    from octgn_api import *
 
 ###################
 #### CONSTANTS ####
@@ -9,6 +14,16 @@ import re
 deck = "Deck"
 discard = "Discard"
 graveyard = "thevoid"
+AttackColor = "#ff0000"
+BlockColor = "#00ff00"
+defaultX = 30
+defaultY = 25
+
+playerside = None
+sideflip = None
+
+savedtags = { }
+
 
 ## Change this HEX string value to customize the highlight color
 highlight = "#ff0000"
@@ -20,6 +35,22 @@ const_drawInitialHand = 5
 
 # Change this tuple if you want to create a specific default marker (not recommended)
 StandardMarker = ("Marker", "d9851c6f-2ed7-4ca9-82d2-f22e4e12114c")
+
+
+
+def registerPlayer(args): #this function triggers off loading a deck, and registers the player as active
+    mute()
+    player = args.player
+    if player == me: #only process the local player
+        playersDict = eval(getGlobalVariable('activePlayers')) #the activePlayers variable just keeps track of the active players in the game
+        playersDict[me._id] = autoscriptCheck() #keeps track of who's allergic to fun
+        setGlobalVariable('activePlayers', str(playersDict))
+
+
+
+
+
+
 
 ######################
 #### PILE ACTIONS ####

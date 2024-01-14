@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0"  standalone="yes"?>
 <game name="Tarocc"
     id="9df0e641-114c-4b90-8d34-f78b6eda3bcc"
     version="0.0.0.1" 
@@ -30,14 +30,13 @@
     </gameModes>
     <globalvariables>
     </globalvariables>
-    <card back="Resources/back.png" front="Resources/myfront.png" width="63" height="88" cornerRadius="2" >
-        <property name="Text" type="String" textKind="Free" hidden="False" ignoreText="False" />
-            <property name="readings" type="RichText"  />
+    <card back="./cards/b.jpg" front="./cards/c.jpg" width="63" height="88" cornerRadius="3" backWidth="63" backHeight="88" backCornerRadius="3" >
+            <property name= "minionSuits"  type="String"/>
+            <property name="readings" type="String"  />
             <property name="power" type="String"  />
             <property name="cos" type="String"  />
-            <property name="uprightEffect" type="RichText"  />
-            <property name="reversedEffect" type="RichText"  />
-            <property name= "minionSuits"  type="String"/>
+            <property name="uprightEffect" type="String"  />
+            <property name="reversedEffect" type="String"  />
 
 
 
@@ -46,6 +45,7 @@
         <groupaction menu="Flip a Coin" shortcut="ctrl+shift+r" execute="flipCoin" />
         <groupaction menu="Roll a 6-sided Die" shortcut="ctrl+r" execute="rollDice" />
         <groupaction menu="Interrupt Game" shortcut="enter" execute="interrupt" />
+
     <!--    <groupaction menu="Pass" shortcut="tab" execute="passTurn" />-->
         <cardaction menu="Rotate Card" default="True" batchExecute="rotate" />
         <cardaction menu="Flip Card Face Up/Down" shortcut="ctrl+f" batchExecute="flip" />
@@ -54,7 +54,7 @@
         <cardaction menu="Remove Marker" shortcut="ctrl+W" batchExecute="removeMarker" />
         <cardaction menu="Add Custom Marker..." shortcut="ctrl+shift+Q" batchExecute="addAnyMarker" />
     </table>
-   <player summary="Hand:{#Hand} Score:{#Score}">
+   <player summary="H:{#Hand} | D:{#Damage}">
     <counter name="Score" icon="Resources/score.png" />
     <hand name="Hand" shortcut="ctrl+H" visibility="me" ordered="False" icon="Resources/hand.png">
        <cardaction menu="Discard Card" shortcut="del" execute="discard" />
@@ -79,13 +79,13 @@
   <shared>
   </shared>
   <deck>
-      <section name="Main Deck" group="Deck" />
-      <section name="The void" group= "thevoid" /> 
+      <section name="Main" group="Deck" />
+      <section name="TheVoid" group= "thevoid" /> 
   </deck>
     <phases>
-    <phase name="Draw Step" icon="icon/mypic.jpg" />
-    <phase name="Action Phase" icon="icon/mypic2.jpg" />
-    <phase name="Resolve Phase" icon="icon/mypic2.jpg" />
+    <phase name="Draw Step" icon="./icon/main.png" />
+    <phase name="Action Phase" icon="./icon/attack.png" />
+    <phase name="Resolve Phase" icon="./icon/main2.png" />
     
   </phases> 
 </game>

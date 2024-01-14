@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" ?>
 <templates>
   <blocks>
-    <block type="text" id="name">
+    <block type="text" id="blank">
       <location x="50" y="50"/>
       <text color="#000000" size="20"/>
     </block>

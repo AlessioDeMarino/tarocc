@@ -1,0 +1,14 @@
+<?xml version="1.0"  standalone="yes"?>
+<deck game="9df0e641-114c-4b90-8d34-f78b6eda3bcc">
+    <section name="Main">
+<card qry="2" id ="1d153bb5-e97d-4653-b864-9d317c941247">The Citizen</card>
+<card qry="2" id ="295d61bb-bef8-4416-a4aa-0e523ff194a5">The Mage Apprentice</card>
+<card qry="2" id ="ea245cb9-1e0f-45d0-bda0-43863f15241f">The Chronicler</card>
+<card qry="2" id ="e4822fda-6bfe-4d6b-8c93-66d3c677d0ec">The Thinker</card>
+
+
+    </section>
+    <section name="TheVoid"/>
+
+
+</deck>

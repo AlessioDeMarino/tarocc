@@ -1,77 +1,76 @@
-﻿<?xml version="1.0" ?>
-
+﻿<?xml version="1.0" standalone="yes"?>
 <set name="firstpack" id="017e0bce-4807-4cf3-b122-2d163ff3b825" gameId="9df0e641-114c-4b90-8d34-f78b6eda3bcc" shortName="basic" releaseDate="2023-12-23">
   <cards>
     <card name="The Citizen" id="1d153bb5-e97d-4653-b864-9d317c941247">
       <property name="readings" value="3"></property>
-      <property name="power">1</property>
-      <property name="cos">1</property>
+      <property name="power"  value = "1" ></property>
+      <property name="cos" value = "1" ></property>
       <property name="uprightEffect">Evolve in qualsiasi cosa</property>
       <property name="reversedEffect">/</property>
     </card>
     <card name="The Mage Apprentice" id="295d61bb-bef8-4416-a4aa-0e523ff194a5">
-      <property name="minionSuits"></property>
+      <property name="minionSuits" value=""></property>
       <property name="readings" value="2"></property>
-      <property name="power">1</property>
-      <property name="cos">1</property>
+      <property name="power" value = "1" ></property>
+      <property name="cos" value = "1" ></property>
       <property name="uprightEffect">This Champion has +1/+0 for each different Suit on your board</property>
       <property name="reversedEffect">On Initiative, deal 1 damage to a random enemy Champion</property>
     </card>
     <card name="The Chronicler" id="ea245cb9-1e0f-45d0-bda0-43863f15241f">
       <property name="minionSuits" value="S"></property>
       <property name="readings" value="2"></property>
-      <property name="power">1</property>
-      <property name="cos">1</property>
+      <property name="power" value = "1" ></property>
+      <property name="cos" value = "1" ></property>
       <property name="uprightEffect">When a friendly Champion dies, this gets +1/+0 or +0/+1 (based on the highest stat of the dead Champion).</property>
       <property name="reversedEffect">Aftermath (2): grows by +1/+1</property>
     </card>
     <card name="The Thinker" id="e4822fda-6bfe-4d6b-8c93-66d3c677d0ec">
-      <property name="minionSuits"> </property>
+      <property name="minionSuits" value="S" ></property>
       <property name="readings" value="3"></property>
-      <property name="power">1</property>
-      <property name="cos">1</property>
+      <property name="power" value = "1" ></property>
+      <property name="cos" value = "1" ></property>
       <property name="uprightEffect">Each time a fight takes place and The Thinker is not played on your board, it grows by +1/+1.</property>
       <property name="reversedEffect">/</property>
     </card>
     <card name="The Librarian" id="9a456c1b-bbf9-4279-9a81-293feade035e">
       <property name="minionSuits" value="S"></property>
     <property name="readings"  value="1"></property>
-    <property name="power">1</property>
-    <property name="cos">2</property>
+    <property name="power" value = "1" ></property>
+    <property name="cos"  value = "2" ></property>
     <property name="uprightEffect">Inspire Swords: +1/+1</property>
     <property name="reversedEffect">Aftermath (2): a random Champion of Swords in your deck grows by +1/+1</property>
-  </card>
-  <card name="The Mystic" id="92b0abfd-9b17-4af8-8053-155dc3010d2e">
+    </card>
+    <card name="The Mystic" id="92b0abfd-9b17-4af8-8053-155dc3010d2e">
     <property name="minionSuits" value="S"></property>
-  <property name="readings" value="3"></property>
-  <property name="power">1</property>
-  <property name="cos">1</property>
-  <property name="uprightEffect">Aftermath (2): At the end of the fight, Draw a Minor Arcana</property>
-  <property name="reversedEffect">At the end of a fight in which this Champion took part, draw a Minor Arcana and then permanently blank this Champion.</property>
-</card>
+    <property name="readings" value="3"></property>
+    <property name="power" value = "1" ></property>
+    <property name="cos" value = "1" ></property>
+    <property name="uprightEffect">Aftermath (2): At the end of the fight, Draw a Minor Arcana</property>
+    <property name="reversedEffect">At the end of a fight in which this Champion took part, draw a Minor Arcana and then permanently blank this Champion.</property>
+    </card>
 <card name="The Dreamer" id="45c99b78-b961-4db3-87d1-d78e397841fc">
   <property name="minionSuits" value="PSW"></property>
   <property name="readings" value="3"></property>
-  <property name="power">1</property>
-  <property name="cos">1</property>
+  <property name="power" value = "1" ></property>
+  <property name="cos" value = "1" ></property>
   <property name="uprightEffect">Has +1/+1 if you have no Champions of Coins on your board</property>
   <property name="reversedEffect">On Demise, a friendly Champion of Coins gets +1/+1</property>
 </card>
 <card name="The Acolyte" id="b745cb31-aaea-4408-b1f5-da8f2695f394">
   <property name="minionSuits" value="W"></property>
-<property name="readings" value="2"></property>
-<property name="power">1</property>
-<property name="cos">2</property>
-<property name="uprightEffect">Aftermath (2): a random Champion in your deck grows by +0/+2</property>
-<property name="reversedEffect">On Demise, grows by +1/+0 only on Reversed position</property>
+  <property name="readings" value="2"></property>
+  <property name="power" value = "1" ></property>
+  <property name="cos" value = "2" ></property>
+  <property name="uprightEffect">Aftermath (2): a random Champion in your deck grows by +0/+2</property>
+  <property name="reversedEffect">On Demise, grows by +1/+0 only on Reversed position</property>
 </card>
 <card name="The Nomad" id="0db8740b-35f7-4ba5-bc04-2f3d02ff0a7b">
-<property name="minionSuits" value="W"></property>
-<property name="readings" value="1"></property>
-<property name="power">2</property>
-<property name="cos">1</property>
-<property name="uprightEffect">Before attacking, Migrate Right by 1</property>
-<property name="reversedEffect">Before attacking, Migrate Left by 1</property>
+  <property name="minionSuits" value="W"></property>
+  <property name="readings" value="1"></property>
+  <property name="power"  value = "2"></property>
+  <property name="cos" value = "1" ></property>
+  <property name="uprightEffect">Before attacking, Migrate Right by 1</property>
+  <property name="reversedEffect">Before attacking, Migrate Left by 1</property>
 </card>
 </cards>
 </set>
